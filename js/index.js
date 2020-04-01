@@ -1,0 +1,1 @@
+import Vue from 'vue'import head from './head.vue'import VueRouter from 'vue-router'import redact from './redactnotes.vue'Vue.use(VueRouter);let router = new VueRouter({    routes:[        {path: '/notes/:id',name:'notes', component:redact},    ]});new Vue({    el: '#header',    router: router,    render: b => b(head)});
