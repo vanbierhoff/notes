@@ -1,0 +1,80 @@
+.lineThroug {
+  text-decoration: line-through; }
+
+.button-delete {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: 0 !important;
+  background: none;
+  position: relative;
+  left: 89%;
+  top: 30px; }
+
+.button-delete__transform-one {
+  position: absolute;
+  transform: rotate(45deg); }
+
+.button-delete__transform-two {
+  position: absolute;
+  transform: rotate(-45deg); }
+
+.button-delete__div {
+  display: block;
+  width: 20px;
+  height: 2.5px;
+  background: #800080;
+  left: 0.5px; }
+
+.button-delete:hover .button-delete__transform-two {
+  animation: hover-link 1s ease-in;
+  background: red; }
+.button-delete:hover .button-delete__transform-one {
+  animation: hover-link-two 1s ease-in;
+  background: red; }
+
+#delete-notes {
+  position: absolute;
+  display: flex;
+  top: 30%;
+  border: 1.5px solid #800000;
+  background: #FFFFFF;
+  padding: 20px; }
+
+.delete-notes-button {
+  outline: 0 !important;
+  border: 1px solid Teal;
+  padding: 10px 25px;
+  background: Teal;
+  color: #ffffff;
+  margin: 25px; }
+
+@keyframes hover-link {
+  from {
+    transform: rotate(45deg);
+    background: red; }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(135deg); }
+  100% {
+    transform: rotate(135deg);
+    background: red; } }
+.all-notes__thisNotes {
+  max-width: 20%;
+  min-width: 20%;
+  margin: 1%; }
+
+@keyframes hover-link-two {
+  from {
+    transform: rotate(-45deg);
+    background: red; }
+  25% {
+    transform: rotate(-90deg); }
+  50% {
+    transform: rotate(-135deg); }
+  100% {
+    transform: rotate(-135deg);
+    background: red; } }
+
+/*# sourceMappingURL=style.css.map */
